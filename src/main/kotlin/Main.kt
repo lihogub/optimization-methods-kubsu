@@ -1,4 +1,5 @@
-import task01.findFunctionExtremum
+import task01.findFunctionExtremumDichotomy
+import task02.findFunctionExtremumFibonacci
 
 fun main() {
     val a = -3.0
@@ -6,5 +7,6 @@ fun main() {
     val delta = 0.2
     val epsilon = 0.5
     val f: (Double)->Double = {x -> 2*x*x + 2*x + 3.5}
-    findFunctionExtremum(epsilon, delta, a, b, f)
+    findFunctionExtremumDichotomy(epsilon, delta, a, b, f)
+    findFunctionExtremumFibonacci(epsilon, a, b, f)
 }
