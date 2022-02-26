@@ -2,7 +2,7 @@ package task01
 
 import kotlin.math.abs
 
-fun findFunctionExtremum(epsilon: Double, delta: Double, leftBound: Double, rightBound: Double, func: (Double) -> Double) {
+fun findFunctionExtremumDichotomy (epsilon: Double, delta: Double, leftBound: Double, rightBound: Double, func: (Double) -> Double) {
     var leftPoint = leftBound
     var rightPoint = rightBound
     var middleLeftPoint: Double
