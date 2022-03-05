@@ -1,5 +1,5 @@
 import task01.findFunctionExtremumDichotomy
-import task02.findFunctionExtremumFibonacci
+import task02.findFunctionExtremumGoldenRatio
 
 fun main() {
     val a = -3.0
@@ -8,5 +8,5 @@ fun main() {
     val epsilon = 0.5
     val f: (Double)->Double = {x -> 2*x*x + 2*x + 3.5}
     findFunctionExtremumDichotomy(epsilon, delta, a, b, f)
-    findFunctionExtremumFibonacci(epsilon, a, b, f)
+    findFunctionExtremumGoldenRatio(epsilon, a, b, f)
 }

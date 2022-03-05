@@ -2,7 +2,7 @@ package task02
 
 import kotlin.math.sqrt
 
-fun findFunctionExtremumFibonacci(epsilon: Double, leftBound: Double, rightBound: Double, func: (Double) -> Double) {
+fun findFunctionExtremumGoldenRatio(epsilon: Double, leftBound: Double, rightBound: Double, func: (Double) -> Double) {
     val goldenRatio = 1.5 - sqrt(5.0) / 2.0
     var a = leftBound
     var b = rightBound
@@ -12,6 +12,7 @@ fun findFunctionExtremumFibonacci(epsilon: Double, leftBound: Double, rightBound
     var fy = func(y)
     var fz = func(z)
     var k = -1
+
 
     while ((b - a) > epsilon) {
         if (fy < fz) {
