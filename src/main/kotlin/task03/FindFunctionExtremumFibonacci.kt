@@ -8,10 +8,13 @@ fun findFunctionExtremumFibonacci(epsilon: Double, leftBound: Double, rightBound
     var fibonacciNMinusOne = 1
     var fibonacciN = 1
 
+    val fibonacciList = mutableListOf(1)
+
     while ((b - a) / epsilon > fibonacciN) {
         val tmp = fibonacciN
         fibonacciN += fibonacciNMinusOne
         fibonacciNMinusOne = tmp
+        fibonacciList.add(fibonacciN)
         ++n
     }
 
@@ -37,6 +40,12 @@ fun findFunctionExtremumFibonacci(epsilon: Double, leftBound: Double, rightBound
         }
         k++
     }
-
+    println(
+        """
+            |********************
+            |* Fibonacci method *
+            |********************
+        """.trimMargin())
+    println("Used fibonacci numbers: $fibonacciList")
     println("N:${2 * (k + 1)} K: $k X: ${(a + b) / 2.0}")
 }

@@ -23,5 +23,11 @@ fun findFunctionExtremumDichotomy (epsilon: Double, delta: Double, leftBound: Do
         }
         k++
     }
+    println(
+        """
+            |********************
+            |* Dichotomy method *
+            |********************
+        """.trimMargin())
     println("N:${2 * (k + 1)} K: $k X: ${(leftPoint + rightPoint) / 2.0}")
 }

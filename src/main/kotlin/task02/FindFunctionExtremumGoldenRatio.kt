@@ -30,5 +30,11 @@ fun findFunctionExtremumGoldenRatio(epsilon: Double, leftBound: Double, rightBou
         }
         k++
     }
+    println(
+        """
+            |***********************
+            |* Golden Ratio method *
+            |***********************
+        """.trimMargin())
     println("N:${2 * (k + 1)} K: $k X: ${(a + b) / 2.0}")
 }
