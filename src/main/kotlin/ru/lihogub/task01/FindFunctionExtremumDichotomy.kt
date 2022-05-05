@@ -1,4 +1,4 @@
-package task01
+package ru.lihogub.task01
 
 import kotlin.math.abs
 

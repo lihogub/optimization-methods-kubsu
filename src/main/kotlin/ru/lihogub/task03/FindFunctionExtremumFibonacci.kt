@@ -1,4 +1,4 @@
-package task03
+package ru.lihogub.task03
 
 fun findFunctionExtremumFibonacci(epsilon: Double, leftBound: Double, rightBound: Double, func: (Double) -> Double) {
     var a = leftBound

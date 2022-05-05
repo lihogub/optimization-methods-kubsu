@@ -1,4 +1,4 @@
-package task04
+package ru.lihogub.task04
 
 import kotlin.math.pow
 import kotlin.math.sqrt
@@ -17,7 +17,7 @@ fun findFunctionExtremumGradientDescent(
 
     var dx = gradX(x, y)
     var dy = gradY(x, y)
-
+    var k = 0
     while (sqrt(dx.pow(2) + dy.pow(2)) > epsilon) {
         x -= delta * dx
         y -= delta * dy
@@ -25,9 +25,11 @@ fun findFunctionExtremumGradientDescent(
         dx = gradX(x, y)
         dy = gradY(x, y)
 
-        println("$x $y $dx $dy")
+        k++
+        println("k=$k [x, y]=[$x, $y] [dx, dy]=[$dx, $dy]")
     }
 
+    println("K=$k")
     println("Extremum: ($x, $y)")
     println("Extremum value: ${func(x, y)}")
 }
